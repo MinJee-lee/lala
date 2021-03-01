@@ -1,2 +1,2 @@
 #!/bin/bash
-touch /home/ec2-user/script/doradoratest
+systemctl restart nginx
