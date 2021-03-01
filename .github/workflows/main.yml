@@ -39,17 +39,11 @@ jobs:
             # Source file
             source: appspec.yml
             # Target file
-            target: build/appspec.yml
+            target: build/appspec.yml            
             
-        - name: Copy Directory
-  # You may pin to the exact commit or the version.
-  # uses: MadaraUchiha/copy-action@7ddff6fc153a2ea2cd0fb88ed9750544c051e399
-          uses: MadaraUchiha/copy-action@0.0.1
-          with:
-            # Source file
-            source: script
-            # Target file
-            target: build/script
+        - name: copy script file
+          run: | 
+            copy -r script build/
             
             # Install AWS CLI 2
         - name: Install AWS CLI 2
