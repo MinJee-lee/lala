@@ -3,4 +3,8 @@ os: linux
 files:
   - source:  /
     destination: /home/ec2-user/
-    
+ 
+hooks:
+ AfterInstall:
+   - location: script/RunResourceTests.sh
+     timeout: 180
