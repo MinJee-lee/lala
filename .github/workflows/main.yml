@@ -41,9 +41,9 @@ jobs:
             # Target file
             target: build/appspec.yml            
             
-        - name: copy script file
+        - name: cp script file
           run: | 
-            copy -r script build/
+            cp -r script build/
             
             # Install AWS CLI 2
         - name: Install AWS CLI 2
