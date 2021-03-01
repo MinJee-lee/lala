@@ -6,5 +6,5 @@ files:
     
  hooks:
  AfterInstall:
-   - location: Script/RunResourceTests.sh
+   - location: script/RunResourceTests.sh
      timeout: 180
