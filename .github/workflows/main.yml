@@ -41,7 +41,7 @@ jobs:
             # Target file
             target: build/appspec.yml            
             
-        - name: cp script file
+        - name: copy script file
           run: | 
             cp -r script build/
             
