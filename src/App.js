@@ -2,8 +2,6 @@ import React from "react";
 import { Contents, NavBar } from './components';
 import { HashRouter as Router } from 'react-router-dom'
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import {
-
 import './App.css';
 
 class App extends Component {
