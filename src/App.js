@@ -1,22 +1,71 @@
+
+// import React, { Component } from 'react';
+// import Navbar from './components/NavBar/NavBar';
+// import { BrowserRouter, Route, Switch} from 'react-router-dom';
+// import { Home, About, Contact } from './components';
+// import './App.css';
+
+// const App = () => {
+//     return (
+    
+//       <BrowserRouter>
+//       <div className="App">
+//         <Navbar/>
+//         <Switch>
+//           <Route exact path="/" component={Home}/>
+//           <Route path="/about" component={About}/>
+//           <Route path="/contact" component={Contact}/>
+//         </Switch>
+//       </div>
+//       </BrowserRouter>
+   
+//       );
+//   };
+
+// export default App;
+
 import React, { Component } from 'react';
-import Navbar from './components/NavBar/NavBar';
-import { BrowserRouter, Route, Switch} from 'react-router-dom';
-import { Home, About, Contact } from './components';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Transition, TransitionGroup } from 'react-transition-group';
+import { play, exit } from './timelines';
+import Nav from './Nav';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Author from './components/Contact/Contact';
 
 class App extends Component {
+
   render() {
     return (
       <BrowserRouter>
-      <div className="App">
-        <Navbar/>
-        <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route path="/about" component={About}/>
-          <Route path="/contact" component={Contact}/>
-        </Switch>
-      </div>
+        <div className="app">
+          <Nav/>
+          <Route render={({ location }) => {
+            const { pathname, key } = location;
+
+            return (
+              <TransitionGroup component={null}>
+                <Transition
+                  key={key}
+                  appear={true}
+                  onEnter={(node, appears) => play(pathname, node, appears)}
+                  // onExit={(node, appears) => exit(node, appears)}
+                  timeout={{enter: 750, exit: 150}}
+                >
+                  <Switch location={location}>
+                    <Route exact path="/" component={Home}/>
+                    <Route path="/author" component={Author} />
+                    <Route path="/about" component={About} />
+                  </Switch>
+                </Transition>
+              </TransitionGroup>
+            )
+          }}/>
+        </div>
       </BrowserRouter>
-    );
+    )
   }
 }
-export default App;
+  
+  export default App;
+
