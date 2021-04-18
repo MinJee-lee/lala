@@ -49,12 +49,12 @@ class App extends Component {
                   key={key}
                   appear={true}
                   onEnter={(node, appears) => play(pathname, node, appears)}
-                  // onExit={(node, appears) => exit(node, appears)}
+                  onExit={(node, appears) => exit(node, appears)}
                   timeout={{enter: 750, exit: 150}}
                 >
                   <Switch location={location}>
                     <Route exact path="/" component={Home}/>
-                    <Route path="/author" component={Author} />
+                    <Route path="/contact" component={Author} />
                     <Route path="/about" component={About} />
                   </Switch>
                 </Transition>

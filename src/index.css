@@ -24,13 +24,31 @@ h2 {
   margin-top: 1.5em;
 }
 
-.view a {
+
+
+.About a {
   color: #ff5252;
   text-decoration: none;
 }
 
-.view a:hover {
+.About a:hover {
   text-decoration: underline;
+}
+
+.Contact a {
+  color: #ff5252;
+  text-decoration: none;
+}
+
+.Contact a:hover {
+  text-decoration: underline;
+}
+
+.About h1{
+  color: white;
+}
+.Contact h1{
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
