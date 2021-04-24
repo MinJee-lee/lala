@@ -8,7 +8,11 @@ class Home extends Component {
         <div className="with--accent">Welcome</div>
         <div className="with--accent2">to</div>
         <div className="with--accent2">Minjee's <span className="with--accent">Portforlio</span></div>
+
+       
       </h1>
+
+
     );
   }
 }
