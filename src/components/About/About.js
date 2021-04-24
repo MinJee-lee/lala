@@ -7,15 +7,16 @@ class About extends Component {
         <h1>About</h1>
         <div className="content">
           <div className="content--inner">
-            왜 안돌아갈까왜왜
-            <h2>여기는 무슨말을 써야할까</h2>
+            
+            <h2>Project</h2>
             <ul>
-              <li>깃허브주소를 써야겠다 <a href="https://github.com/MinJee-lee">github</a> </li>
-              <li>어쩌구저쩌구어쩌구저쩌구 <a href="https://github.com/MinJee-lee">github</a> </li>
+              <li>About <a href="https://www.notion.so/About-8d5c7b76a2ba417d83e2b3f3b6df6452">About</a> </li>
+              <li>My <a href="https://github.com/MinJee-lee">github</a> </li>
+              <li>project <a href="https://www.notion.so/Spring-Security-89ea86cd73574443addf32c18e2de111">Spring Security</a> </li>
             </ul>
             <h2>Posts this project is mentioned</h2>
             <ul>
-              <li><em>Coming soon...</em></li>
+              <li><em>Coming soon....</em></li>
             </ul>
           </div>
         </div>
