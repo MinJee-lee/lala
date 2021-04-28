@@ -6,11 +6,11 @@ class Contact extends Component{
 	        <h1>Contact</h1>
 	        <div className="content">
 	          <div className="content--inner">
-	            <p className="content--excerpt">ㄴㅇㄴㅇ</p>
-	            <p>ㄴㅇㅇㄴㅇㄴ.</p>
-	            <p>ㄴㅇㄴㅇㄴㅇ</p>
-	            <p>ㄴㅇㄴㅇ</p>
-	            <p>ㄴㅇㄴㅇㄴㅇ</p>
+	            <p className="content--excerpt">Contact</p>
+	            <p>Coming Soon...</p>
+	            <p></p>
+	            <p></p>
+	            <p></p>
 	          </div>
 	        </div>
      	</div>
