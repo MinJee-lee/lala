@@ -43,7 +43,7 @@ jobs:
             
         - name: copy script file
           run: | 
-            cp -r script build/
+            cp -r script --update build/
             
             # Install AWS CLI 2
         - name: Install AWS CLI 2
