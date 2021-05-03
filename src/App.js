@@ -1,29 +1,4 @@
 
-// import React, { Component } from 'react';
-// import Navbar from './components/NavBar/NavBar';
-// import { BrowserRouter, Route, Switch} from 'react-router-dom';
-// import { Home, About, Contact } from './components';
-// import './App.css';
-
-// const App = () => {
-//     return (
-    
-//       <BrowserRouter>
-//       <div className="App">
-//         <Navbar/>
-//         <Switch>
-//           <Route exact path="/" component={Home}/>
-//           <Route path="/about" component={About}/>
-//           <Route path="/contact" component={Contact}/>
-//         </Switch>
-//       </div>
-//       </BrowserRouter>
-   
-//       );
-//   };
-
-// export default App;
-
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { Transition, TransitionGroup } from 'react-transition-group';

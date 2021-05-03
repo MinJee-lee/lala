@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 class About extends Component {
   render() {
     return (
       <div className="About">
         <h1>About</h1>
+        <FontAwesomeIcon icon={faSearch} className="search" />
+
+
         <div className="content">
           <div className="content--inner">
             
