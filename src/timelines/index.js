@@ -1,4 +1,11 @@
 import { TimelineMax as Timeline, Power1 } from 'gsap';
+import { gsap } from 'gsap'
+import { CSSPlugin } from 'gsap/CSSPlugin'
+
+
+// Force CSSPlugin to not get dropped during build
+gsap.registerPlugin(CSSPlugin)
+
 
 const getDefaultTimeline = (node, delay) => {
   const timeline = new Timeline({ paused: true });
